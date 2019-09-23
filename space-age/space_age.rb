@@ -1,6 +1,11 @@
 module SpaceAge
-  class age
-    def on_earth
+  class Age
+    attr_reader :seconds
+    
+    YEAR = 31557600.00
+
+    def on_earth(time)
+      (seconds/YEAR).round(2)
     end
 
     def on_mercury
