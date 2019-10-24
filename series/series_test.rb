@@ -1,5 +1,6 @@
 require 'minitest/autorun'
 require_relative 'series'
+require 'byebug'
 
 class SeriesTest < Minitest::Test
   def test_simple_slices_of_one
